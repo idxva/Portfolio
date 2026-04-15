@@ -104,10 +104,7 @@ input, textarea, select { font-size: 16px !important; }
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-12px); }
 }
-@keyframes scan {
-  0%   { top: -2%; }
-  100% { top: 102%; }
-}
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
@@ -140,19 +137,7 @@ input, textarea, select { font-size: 16px !important; }
 }
 @media (max-width: 480px) { .orb { display: none; } }
 
-/* ═══════════════════════════════════════════════════════════
-   SCAN LINE
-═══════════════════════════════════════════════════════════ */
-.scan-line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(57,255,20,0.12), transparent);
-  animation: scan 6s linear infinite;
-  pointer-events: none;
-  z-index: 1;
-}
+
 
 /* ═══════════════════════════════════════════════════════════
    SCROLL REVEAL
@@ -486,22 +471,7 @@ input, textarea, select { font-size: 16px !important; }
 }
 @media (min-width: 768px) { .hero-avatar-col { padding-top: 0; } }
 
-.avatar-ring {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
 
-.avatar-ring-inner {
-  width: 14rem; height: 14rem;
-  border-radius: 50%;
-  border: 1px solid rgba(57,255,20,0.15);
-}
-@media (min-width: 640px) { .avatar-ring-inner { width: 16rem; height: 16rem; } }
-@media (min-width: 768px) { .avatar-ring-inner { width: 18rem; height: 18rem; } }
 
 .avatar-wrap {
   position: relative;
