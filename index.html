@@ -92,7 +92,7 @@
         <!-- CTAs -->
         <div class="hero-ctas">
           <a href="#projects" class="btn-primary">View Projects</a>
-          <a  href="Deva.pdf.pdf" download class="btn-outline">Download CV ↓</a>
+          <a id="cv-link" href="Deva.pdf.pdf" download class="btn-outline">Download CV ↓</a>
         </div>
         <!-- Social icons -->
         <div id="social-links"></div>
@@ -297,7 +297,7 @@ const CONFIG = {
   footerLogo: '***',
   greeting  : '🐦‍🔥 Valar morghullis',
   bio       : 'A passionate student developer crafting creative digital experiences. I love turning ideas into elegant code and beautiful interfaces.',
-  cvLink    : 'Deva.pdf',
+  cvLink    : 'Deva.pdf.pdf',
   status    : 'Open to internships & PPO',
 
   /* ── Typewriter roles ── */
@@ -471,8 +471,7 @@ document.getElementById('nav-logo').innerHTML    = CONFIG.logo;
 document.getElementById('footer-logo').innerHTML = CONFIG.footerLogo;
 document.getElementById('footer-name').textContent = CONFIG.fullName;
 document.getElementById('hero-name').textContent   = CONFIG.name;
-document.getElementById('hero-greeting').innerHTML =
-  `<span class="neon-text">🐦‍🔥</span> ${CONFIG.greeting.replace(/^[^\s]+\s/, '')}`;
+document.getElementById('hero-greeting').innerHTML = CONFIG.greeting;
 document.getElementById('hero-bio').textContent    = CONFIG.bio;
 document.getElementById('hero-status').textContent = CONFIG.status;
 document.getElementById('cv-link').href            = CONFIG.cvLink;
