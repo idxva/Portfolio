@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Deva | Portfolio</title>
+  <meta name="description" content="Portfolio of Deva — a passionate student developer." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="grid-bg">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="#home" id="nav-logo">&lt;Dev(a)&gt;</a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#home"     class="nav-link">Home</a></li>
+      <li><a href="#about"    class="nav-link">About</a></li>
+      <li><a href="#skills"   class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact"  class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Desktop CTA -->
+    <a href="#contact" class="hire-btn">Hire Me ↗</a>
+
+    <!-- Hamburger (mobile) -->
+    <button id="hamburger" aria-label="Toggle menu">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu">
+    <ul class="mobile-nav-list">
+      <li><a href="#home"     class="mobile-link"><span class="num">01.</span> Home</a></li>
+      <li><a href="#about"    class="mobile-link"><span class="num">02.</span> About</a></li>
+      <li><a href="#skills"   class="mobile-link"><span class="num">03.</span> Skills</a></li>
+      <li><a href="#projects" class="mobile-link"><span class="num">04.</span> Projects</a></li>
+      <li><a href="#contact"  class="mobile-link"><span class="num">05.</span> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════════════════ -->
+<section id="home">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="scan-line"></div>
+
+  <div class="hero-inner">
+    <div class="hero-grid">
+
+      <!-- Text -->
+      <div class="hero-text">
+        <!-- Status badge -->
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span id="hero-status">Open to opportunities</span>
+        </div>
+        <!-- Greeting -->
+        <div id="hero-greeting" class="hero-greeting"></div>
+        <!-- Name -->
+        <h1 class="hero-name-block">
+          Hi, I'm <br>
+          <span id="hero-name" class="neon-text"></span>
+        </h1>
+        <!-- Typewriter roles -->
+        <div class="hero-roles">
+          <p id="typewriter-text"></p>
+        </div>
+        <!-- Bio -->
+        <p id="hero-bio"></p>
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a  href="Deva.pdf.pdf" download class="btn-outline">Download CV ↓</a>
+        </div>
+        <!-- Social icons -->
+        <div id="social-links"></div>
+      </div>
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+     
+<!-- Avatar -->
+      <div class="hero-avatar-col">
+        <div class="avatar-ring">
+          <div class="avatar-ring-inner"></div>
+        </div>
+        <div class="avatar-wrap">
+          <div class="avatar-circle">
+            <!-- To use a photo: replace the svg with <img src="photo.jpg" alt="Your Name"> -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+            </svg>
+          </div>
+          <div class="avatar-badge">
+            <span class="pulse-dot"></span>
+            ALIVE
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="reveal">
+    <p class="section-label">// 01. about_me</p>
+    <h2 class="section-title">About <span class="neon-text">Me</span></h2>
+  </div>
+
+  <div class="about-grid">
+
+    <!-- Terminal card -->
+    <div class="reveal terminal-card">
+      <div class="terminal-header">
+        <div class="term-dot term-dot-red"></div>
+        <div class="term-dot term-dot-yellow"></div>
+        <div class="term-dot term-dot-green"></div>
+        <span class="terminal-filename">about.json</span>
+      </div>
+      <pre class="terminal-pre" id="about-terminal"></pre>
+    </div>
+
+    <!-- About text + stats -->
+    <div class="reveal about-text">
+      <p id="about-para1"></p>
+      <p id="about-para2"></p>
+
+      <!-- Stats -->
+      <div id="about-stats"></div>
+
+      <!-- Education -->
+      <div class="edu-card">
+        <p class="edu-label">// education</p>
+        <div class="edu-body">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          </div>
+          <div>
+            <p id="edu-degree"></p>
+            <p id="edu-school"></p>
+            <p id="edu-grade"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════════════════════════ -->
+<section id="skills" class="section">
+  <div class="reveal">
+    <p class="section-label">// 02. skills</p>
+    <h2 class="section-title">Tech <span class="neon-text">Stack</span></h2>
+  </div>
+  <!-- Skill category cards rendered by JS -->
+  <div id="skills-grid"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="reveal">
+    <p class="section-label">// 03. projects</p>
+    <h2 class="section-title">Featured <span class="neon-text">Projects</span></h2>
+    <p class="projects-intro">
+      A few things I've built. Each project is an adventure in problem-solving and design.
+    </p>
+  </div>
+
+  <!-- Filter buttons (rendered by JS) -->
+  <div id="filter-btns" class="reveal"></div>
+
+  <!-- Projects grid (rendered by JS) -->
+  <div id="projects-grid"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section section-narrow">
+  <div class="reveal contact-header">
+    <p class="section-label">// 04. contact</p>
+    <h2 class="section-title" style="margin-bottom:0;">Get In <span class="neon-text">Touch</span></h2>
+    <p>
+      Have a project in mind, want to collaborate, or just say hi? My inbox is always open!
+    </p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Contact info (rendered by JS) -->
+    <div id="contact-info" class="reveal">
+      <!-- Availability badge -->
+      <div id="contact-availability" class="availability-badge">
+        <p>CURRENT STATUS</p>
+        <div class="availability-inner">
+          <span class="pulse-dot"></span>
+          <span id="availability-text">Open to internships &amp; freelance</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <form id="contact-form" class="reveal" novalidate>
+      <div>
+        <label for="f-name" class="form-label">Your Name</label>
+        <input id="f-name" type="text" placeholder="John Doe" class="form-input" required />
+      </div>
+      <div>
+        <label for="f-email" class="form-label">Email Address</label>
+        <input id="f-email" type="email" placeholder="john@email.com" class="form-input" required />
+      </div>
+      <div>
+        <label for="f-subject" class="form-label">Subject</label>
+        <input id="f-subject" type="text" placeholder="Project collaboration" class="form-input" />
+      </div>
+      <div>
+        <label for="f-message" class="form-label">Message</label>
+        <textarea id="f-message" rows="4" placeholder="Tell me about your project..." class="form-input" required></textarea>
+      </div>
+      <button type="submit" id="send-btn" class="btn-submit">Send Message →</button>
+      <p id="form-success">✓ Message sent! I'll get back to you soon.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+<footer>
+  <a href="#home" id="footer-logo">&lt;Dev /&gt;</a>
+  <p class="footer-built">
+    Designed &amp; Built with ❤️ and <span class="accent">{ code }</span>
+  </p>
+  <p class="footer-copy">© <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     ██████╗  ██████╗ ███╗   ██╗███████╗██╗ ██████╗
+     ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
+     ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+     ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+     ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+      ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
+
+  ✏️  EVERYTHING YOU NEED TO PERSONALISE IS IN THIS CONFIG OBJECT.
+  ✏️  Do NOT touch the HTML above — just edit the values below.
+═══════════════════════════════════════════════════════════════════════ -->
+<script>
+/* ─────────────────────────────────────────────────────────────
+   STEP 1 — PERSONAL INFO
+   ───────────────────────────────────────────────────────────── */
+const CONFIG = {
+
+  /* ── Identity ── */
+  name      : 'Deva',
+  fullName  : 'Devarajan',
+  logo      : '&lt;Dev(a)&gt;',
+  footerLogo: '***',
+  greeting  : '🐦‍🔥 Valar morghullis',
+  bio       : 'A passionate student developer crafting creative digital experiences. I love turning ideas into elegant code and beautiful interfaces.',
+  cvLink    : 'Deva.pdf',
+  status    : 'Open to internships & PPO',
+
+  /* ── Typewriter roles ── */
+  roles: [
+    'Student Developer 🖥️',
+    'Web Developer 🌐',
+    'Creative designer 💡',
+  ],
+
+  /* ── About section ── */
+  aboutPara1: `Hey there! I'm a <strong style="color:#fff">Computer Science student</strong> with a passion for
+    creating beautiful, functional web experiences. I've been coding for
+    <strong style="color:#39FF14">2 years</strong> and love working on projects that solve real problems.`,
+  aboutPara2: `When I'm not studying, you'll find me,
+    building side projects, or exploring the latest in tech. I'm always looking for
+    new opportunities to learn and grow.`,
+
+  /* ── Quick stats ── */
+  stats: [
+    { value: '3+', label: 'Projects'       },
+    { value: '2+', label: 'Years of Coding' },
+    { value: '∞',  label: 'Curiosity'       },
+  ],
+
+  /* ── Education ── */
+  education: {
+    degree : 'B.Sc Artificial Intelligence',
+    school : 'HCAS • 2024 – 2027',
+    grade  : 'University of Madras | ',
+  },
+
+  /* ── About-terminal JSON card ── */
+  terminalData: {
+    name       : 'Devarajan',
+    role       : 'AI Student',
+    year       : '2nd Year',
+    university : 'Hindustan College of Arts and Science',
+    location   : 'Padur, Chennai',
+    interests  : ['Web Development', 'Artificial Intelligence', 'Tech'],
+    status     : true,
+  },
+
+/* ─────────────────────────────────────────────────────────────
+   STEP 2 — SOCIAL LINKS
+   Set url: null to hide a social icon.
+   ───────────────────────────────────────────────────────────── */
+  socials: [
+    {
+      label: 'GitHub',
+      url  : 'https://github.com/idxva',
+      svg  : `<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>`,
+    },
+    {
+      label: 'LinkedIn',
+      url  : 'https://www.linkedin.com/in/devarajan-v-064132328/?skipRedirect=true',
+      svg  : `<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>`,
+    },
+    {
+      label: 'Instagram',
+      url  : 'https://www.instagram.com/deva._8725?igsh=YmthdnZtbTQ2czcw',
+      svg  : `<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>`,
+    },
+  ],
+
+  /* Contact info cards */
+  contactInfo: [
+    {
+      label: 'Email',
+      value: 'devarajandeva57@gmail.com',
+      href : 'mailto:devarajandeva57@gmail.com',
+      svg  : `<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>`,
+    },
+    {
+      label: 'GitHub',
+      value: 'github.com/idxva',
+      href : 'https://github.com/idxva',
+      svg  : `<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>`,
+    },
+    {
+      label: 'LinkedIn',
+      value: 'linkedin.com/in/devarajan-v',
+      href : 'https://www.linkedin.com/in/devarajan-v-064132328?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      svg  : `<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>`,
+    },
+  ],
+
+/* ─────────────────────────────────────────────────────────────
+   STEP 3 — SKILLS
+   ───────────────────────────────────────────────────────────── */
+  skillCategories: [
+    {
+      title   : 'Frontend',
+      iconPath: 'M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z',
+      skills  : [
+        { name: 'HTML / CSS',   level: 83 },
+        { name: 'JavaScript',   level: 74 },
+        { name: 'React',        level: 42 },
+        { name: 'Tailwind CSS', level: 37 },
+      ],
+    },
+    {
+      title   : 'Backend',
+      iconPath: 'M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z',
+      skills  : [
+        { name: 'Python',       level: 87 },
+        { name: 'Node.js',      level: 61 },
+        { name: 'SQL / MySQL',  level: 29 },
+        { name: 'Flask/Django', level: 35 },
+      ],
+    },
+    {
+      title   : 'Tools & Others',
+      iconPath: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z',
+      tags    : ['Git / GitHub','VS Code','Figma','Linux','Firebase','MongoDB','C / C++','Java','Cursor','Antigravity','Supabase'],
+    },
+  ],
+
+/* ─────────────────────────────────────────────────────────────
+   STEP 4 — PROJECTS
+   ───────────────────────────────────────────────────────────── */
+  projectFilters: [
+    { key: 'all',  label: 'All'     },
+    { key: 'web',  label: 'Web'     },
+    { key: 'ml',   label: 'AI/ML',   },
+    { key: 'tool', label: 'Tools'   },
+  ],
+
+  projects: [
+    {
+      title      : 'AuraScript',
+      description: 'AuraScript is a web-based application designed to modernize the way healthcare providers manage prescriptions. By replacing traditional paper-based methods with a secure digital interface, the platform ensures higher accuracy, and faster communication between doctors and pharmacies.',
+      cat        : 'web',
+      tags       : ['HTML', 'CSS','JavaScript', 'Firebase'],
+      github     : 'https://idxva.github.io/AuraScript/',
+      demo       : null,
+      iconPath   : 'M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10z',
+    },
+    {
+      title      : 'PharmaLink',
+      description: 'PharmaLink is a full-stack application designed to streamline the pharmacists workflow. It serves as the bridge between the clinic and the pharmacy, allowing pharmacists to debug and verify digital prescriptions in real-time',
+      cat        : 'web',
+      tags       : ['HTML', 'CSS','JavaScript', 'Firebase'],
+      github     : 'https://idxva.github.io/PharmaLink/',
+      demo       : null,
+      iconPath   : 'M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8h16v10z',
+    },
+    {
+      title      : 'Portfolio',
+      description: 'Current site you are on! A personal portfolio website built with HTML, CSS, and JavaScript. It features a responsive design, interactive elements, and showcases projects and skills in a clean, modern layout.',
+      cat        : 'web',
+      tags       : ['Tailwind CSS', 'JavaScript', 'HTML',],
+      github     : null,
+      demo       : null,
+      iconPath   : 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z',
+    },
+  ],
+
+}; /* ─── END OF CONFIG ─── */
+
+
+/* ═══════════════════════════════════════════════════════════════
+   RENDERER — reads CONFIG and builds the DOM.
+   You don't need to edit anything below this line.
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Year ── */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ── Hero ── */
+document.getElementById('nav-logo').innerHTML    = CONFIG.logo;
+document.getElementById('footer-logo').innerHTML = CONFIG.footerLogo;
+document.getElementById('footer-name').textContent = CONFIG.fullName;
+document.getElementById('hero-name').textContent   = CONFIG.name;
+document.getElementById('hero-greeting').innerHTML =
+  `<span class="neon-text">🐦‍🔥</span> ${CONFIG.greeting.replace(/^[^\s]+\s/, '')}`;
+document.getElementById('hero-bio').textContent    = CONFIG.bio;
+document.getElementById('hero-status').textContent = CONFIG.status;
+document.getElementById('cv-link').href            = CONFIG.cvLink;
+document.getElementById('availability-text').textContent = CONFIG.status;
+
+/* Social icons */
+const svgWrap = (svg, label, url) =>
+  `<a href="${url}" target="_blank" aria-label="${label}" class="social-icon">
+     <svg viewBox="0 0 24 24">${svg}</svg>
+   </a>`;
+document.getElementById('social-links').innerHTML =
+  CONFIG.socials.filter(s => s.url).map(s => svgWrap(s.svg, s.label, s.url)).join('');
+
+/* ── About terminal ── */
+const td = CONFIG.terminalData;
+const jsonLines = Object.entries(td).map(([k, v]) => {
+  const key = `  <span style="color:#93c5fd">"${k}"</span>`;
+  let val;
+  if (Array.isArray(v)) {
+    val  = `[\n${v.map(i => `    <span style="color:#fde68a">"${i}"</span>`).join(',\n')}\n  ]`;
+  } else if (typeof v === 'boolean') {
+    val = `<span style="color:#39FF14">${v}</span>`;
+  } else {
+    val = `<span style="color:#fde68a">"${v}"</span>`;
+  }
+  return `${key}: ${val}`;
+});
+document.getElementById('about-terminal').innerHTML =
+  `<code><span style="color:#39FF14">{</span>\n${jsonLines.join(',\n')}\n<span style="color:#39FF14">}</span></code>`;
+
+document.getElementById('about-para1').innerHTML = CONFIG.aboutPara1;
+document.getElementById('about-para2').innerHTML = CONFIG.aboutPara2;
+
+/* Stats */
+document.getElementById('about-stats').innerHTML = CONFIG.stats.map(s =>
+  `<div class="stat-card">
+     <div class="stat-value gradient-text">${s.value}</div>
+     <div class="stat-label">${s.label}</div>
+   </div>`
+).join('');
+
+/* Education */
+document.getElementById('edu-degree').textContent = CONFIG.education.degree;
+document.getElementById('edu-school').textContent = CONFIG.education.school;
+document.getElementById('edu-grade').textContent  = CONFIG.education.grade;
+
+/* ── Skills ── */
+document.getElementById('skills-grid').innerHTML = CONFIG.skillCategories.map(cat => {
+  let inner = '';
+  if (cat.tags) {
+    inner = `<div class="tag-cloud">
+      ${cat.tags.map(t => `<span class="skill-tag">${t}</span>`).join('')}
+    </div>`;
+  } else {
+    inner = `<div class="skill-bars">
+      ${cat.skills.map(sk => `
+        <div class="skill-item" data-level="${sk.level}">
+          <div class="skill-item-label">
+            <span>${sk.name}</span>
+            <span>${sk.level}%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width:0%"></div>
+          </div>
+        </div>`).join('')}
+    </div>`;
+  }
+
+  return `<div class="reveal card-neon skill-card">
+    <div class="skill-card-header">
+      <div class="skill-icon">
+        <svg viewBox="0 0 24 24"><path d="${cat.iconPath}"/></svg>
+      </div>
+      <h3>${cat.title}</h3>
+    </div>
+    ${inner}
+  </div>`;
+}).join('');
+
+/* ── Project filters ── */
+const filterContainer = document.getElementById('filter-btns');
+filterContainer.innerHTML = CONFIG.projectFilters.map((f, i) =>
+  `<button data-filter="${f.key}"
+     class="filter-btn${i === 0 ? ' active-filter' : ''}">
+     ${f.label}
+   </button>`
+).join('');
+
+/* ── Project cards ── */
+const githubSVG = `<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>`;
+const demoSVG  = `<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>`;
+
+document.getElementById('projects-grid').innerHTML = CONFIG.projects.map(p => {
+  const ghBtn = p.github
+    ? `<a href="${p.github}" target="_blank" class="project-link-btn" aria-label="GitHub repo">
+         <svg class="fill-accent" viewBox="0 0 24 24">${githubSVG}</svg></a>` : '';
+  const demoBtn = p.demo
+    ? `<a href="${p.demo}" target="_blank" class="project-link-btn" aria-label="Live demo">
+         <svg class="stroke-accent" stroke-width="2" viewBox="0 0 24 24">${demoSVG}</svg></a>` : '';
+
+  return `<div class="project-card reveal card-neon" data-cat="${p.cat}">
+    <div class="project-card-top">
+      <div class="project-icon">
+        <svg viewBox="0 0 24 24"><path d="${p.iconPath}"/></svg>
+      </div>
+      <div class="project-links">${ghBtn}${demoBtn}</div>
+    </div>
+    <div class="project-body">
+      <h3>${p.title}</h3>
+      <p>${p.description}</p>
+    </div>
+    <div class="project-tags">
+      ${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
+    </div>
+  </div>`;
+}).join('');
+
+/* ── Contact info cards ── */
+const infoContainer = document.getElementById('contact-info');
+CONFIG.contactInfo.forEach(c => {
+  const div = document.createElement('div');
+  div.className = 'contact-info-card card-neon';
+  div.innerHTML = `
+    <div class="contact-info-icon">
+      <svg viewBox="0 0 24 24">${c.svg}</svg>
+    </div>
+    <div class="contact-info-text">
+      <p class="contact-info-label">${c.label}</p>
+      <a href="${c.href}" target="_blank" class="contact-link">${c.value}</a>
+    </div>`;
+  infoContainer.prepend(div);
+});
+
+
+/* ═══════════════════════════════════════════════════════════════
+   INTERACTION — navbar, hamburger, typewriter, scroll, filters, form
+═══════════════════════════════════════════════════════════════ */
+
+/* Navbar scroll effect */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+/* Hamburger */
+const ham        = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('ham-open');
+  mobileMenu.classList.toggle('menu-open');
+});
+document.querySelectorAll('.mobile-link').forEach(link =>
+  link.addEventListener('click', () => {
+    ham.classList.remove('ham-open');
+    mobileMenu.classList.remove('menu-open');
+  })
+);
+
+/* Typewriter */
+let roleIdx = 0, charIdx = 0, deleting = false;
+const twEl = document.getElementById('typewriter-text');
+function typeRole() {
+  const role = CONFIG.roles[roleIdx];
+  twEl.textContent = deleting ? role.slice(0, --charIdx) : role.slice(0, ++charIdx);
+  if (!deleting && charIdx === role.length) { deleting = true; setTimeout(typeRole, 1800); return; }
+  if (deleting && charIdx === 0)            { deleting = false; roleIdx = (roleIdx + 1) % CONFIG.roles.length; }
+  setTimeout(typeRole, deleting ? 50 : 90);
+}
+typeRole();
+
+/* Scroll reveal */
+const revealObserver = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.1 }
+);
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* Skill bars */
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.skill-item').forEach(item => {
+        item.querySelector('.skill-bar-fill').style.width = item.dataset.level + '%';
+      });
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.card-neon').forEach(card => skillObserver.observe(card));
+
+/* Active nav on scroll */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+const navObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.5 });
+sections.forEach(s => navObserver.observe(s));
+
+/* Project filter */
+document.getElementById('filter-btns').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active-filter'));
+  btn.classList.add('active-filter');
+  const filter = btn.dataset.filter;
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.style.display = (filter === 'all' || card.dataset.cat === filter) ? 'flex' : 'none';
+  });
+});
+
+/* Contact form */
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn     = document.getElementById('send-btn');
+  const success = document.getElementById('form-success');
+  btn.textContent = 'Sending…';
+  btn.disabled    = true;
+  /* Wire up EmailJS or Formspree here */
+  setTimeout(() => {
+    btn.textContent = 'Send Message →';
+    btn.disabled    = false;
+    this.reset();
+    success.classList.add('visible');
+    setTimeout(() => success.classList.remove('visible'), 4000);
+  }, 1500);
+});
+
+/* Back to top */
+document.getElementById('nav-logo').addEventListener('click', e => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+</body>
+</html>
