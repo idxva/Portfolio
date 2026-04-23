@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title> Deva | Portfolio</title>
   <meta name="description" content="Portfolio of Deva — a passionate student developer." />
+  <!-- ================================================================================-->
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,6 +14,10 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>emailjs.init("-MzuCJ8JrQluN_dDe");</script>
 </head>
 
 <body class="grid-bg">
@@ -239,22 +244,22 @@
     <form id="contact-form" class="reveal" novalidate>
       <div>
         <label for="f-name" class="form-label">Your Name</label>
-        <input id="f-name" type="text" placeholder="Meoww" class="form-input" required />
+        <input id="f-name" name="from_name" type="text" placeholder="Meoww" class="form-input" required />
       </div>
       <div>
         <label for="f-email" class="form-label">Email Address</label>
-        <input id="f-email" type="email" placeholder="Meoww@email.com" class="form-input" required />
+        <input id="f-email" name="reply_to" type="email" placeholder="Meoww@email.com" class="form-input" required />
       </div>
       <div>
         <label for="f-subject" class="form-label">Subject</label>
-        <input id="f-subject" type="text" placeholder="Project collaboration" class="form-input" />
+        <input id="f-subject" name="subject" type="text" placeholder="Project collaboration" class="form-input" />
       </div>
       <div>
         <label for="f-message" class="form-label">Message</label>
-        <textarea id="f-message" rows="4" placeholder="Tell me about your project..." class="form-input" required></textarea>
+        <textarea id="f-message" name="message" rows="4" placeholder="Tell me about your project..." class="form-input" required></textarea>
       </div>
       <button type="submit" id="send-btn" class="btn-submit">Send Message →</button>
-      <p id="form-success">✓ Message sent! I'll get back to you soon.</p>
+      <p id="form-success">✓ Message sent successfully!</p>
     </form>
   </div>
 </section>
@@ -287,7 +292,7 @@ const CONFIG = {
   fullName  : 'Devarajan',
   logo      : '&lt;Dev(a)&gt;',
   footerLogo: '👻',
-  greeting  : '🐦‍🔥 Valar morghulis',
+  greeting  : '🐦‍🔥 Valar morghullis',
   bio       : 'A passionate student developer crafting creative digital experiences. I love turning ideas into elegant code and beautiful interfaces.',
   cvLink    : 'Deva.pdf.pdf',
   status    : 'Open to internships & freelance',
@@ -678,21 +683,43 @@ document.getElementById('filter-btns').addEventListener('click', e => {
   });
 });
 
-/* Contact form */
+/* Contact form — EmailJS */
 document.getElementById('contact-form').addEventListener('submit', function(e) {
   e.preventDefault();
   const btn     = document.getElementById('send-btn');
   const success = document.getElementById('form-success');
+
+  const templateParams = {
+    from_name : document.getElementById('f-name').value.trim(),
+    reply_to  : document.getElementById('f-email').value.trim(),
+    subject   : document.getElementById('f-subject').value.trim() || '(no subject)',
+    message   : document.getElementById('f-message').value.trim(),
+    to_email  : 'devarajandeva57@gmail.com',
+  };
+
   btn.textContent = 'Sending…';
   btn.disabled    = true;
-  /* Wire up EmailJS or Formspree here */
-  setTimeout(() => {
-    btn.textContent = 'Send Message →';
-    btn.disabled    = false;
-    this.reset();
-    success.classList.add('visible');
-    setTimeout(() => success.classList.remove('visible'), 4000);
-  }, 1500);
+
+  emailjs.send('service_fmtvmi2', 'template_yxri93a', templateParams)
+    .then(() => {
+      btn.textContent = 'Send Message →';
+      btn.disabled    = false;
+      this.reset();
+      success.style.color = 'var(--accent)';
+      success.textContent = '✓ Message sent! I\'ll get back to you soon.';
+      success.classList.add('visible');
+      setTimeout(() => success.classList.remove('visible'), 5000);
+    })
+    .catch((err) => {
+      const reason = (err && (err.text || err.message || JSON.stringify(err))) || 'Unknown error';
+      console.error('EmailJS error:', err);
+      btn.textContent = 'Send Message →';
+      btn.disabled    = false;
+      success.style.color = '#ff4d4d';
+      success.textContent = '✗ Error: ' + reason;
+      success.classList.add('visible');
+      setTimeout(() => success.classList.remove('visible'), 8000);
+    });
 });
 
 /* Back to top */
@@ -701,5 +728,8 @@ document.getElementById('nav-logo').addEventListener('click', e => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 </script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
