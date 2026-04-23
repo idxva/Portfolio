@@ -5,7 +5,7 @@
   --accent:       #2bff14;
   --accent-dim:   #2acc0f;
   --accent-dark:  #e4e10cb6;
-  --base-950:     #020c02;
+  --base-950:     #000000;
   --base-900:     #040f04;
   --base-800:     #071407;
   --base-700:     #0f690f1c;
@@ -74,9 +74,9 @@ input, textarea, select { font-size: 16px !important; }
 ═══════════════════════════════════════════════════════════ */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(238, 239, 255, 0.026) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(33, 221, 0, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(0, 255, 8, 0.040) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(33, 221, 0, 0.040) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -134,6 +134,12 @@ input, textarea, select { font-size: 16px !important; }
   background: rgba(55, 255, 20, 0.033);
   bottom: 25%; right: -6rem;
   filter: blur(55px);
+}
+.orb-3 {
+  width: 39rem; height: 48rem;
+  background: rgb(55, 255, 20);
+  bottom: 25%; right: -6rem;
+  filter: blur(5px);
 }
 @media (max-width: 480px) { .orb { display: none; } }
 
