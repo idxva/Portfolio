@@ -2,19 +2,24 @@
    DESIGN TOKENS
 ═══════════════════════════════════════════════════════════ */
 :root {
-  --accent:       #2bff14;
-  --accent-dim:   #2acc0f;
-  --accent-dark:  #e4e10cb6;
+  --accent:       #41e90e; /* muted cyan/blue */
+  --accent-dim:   #0c92d2;
+  --accent-dark:  #0aff0a;
+  --primary-bg:   #111111;
+  --secondary-bg: #1a1a1a;
+  --primary-text: #e0e0e0;
+  --secondary-text: #b0b0b0;
   --base-950:     #000000;
   --base-900:     #040f04;
   --base-800:     #071407;
   --base-700:     #0f690f1c;
   --base-600:     #122412;
-  --text-main:    #e2ffe2;
-  --text-muted:   #ffffff; /* gray-400 */
+  --text-main:    var(--primary-text);
+  --text-muted:   var(--secondary-text);
   --text-dim:     #6b7280; /* gray-500 */
   --text-darker:  #374151; /* gray-700 */
   --font-sans:    'Space Grotesk', sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
   --font-mono:    'Fira Code', monospace;
 }
 
@@ -28,9 +33,9 @@ html {
 }
 body {
   margin: 0;
-  background: var(--base-950);
+  background: var(--primary-bg);
   color: var(--text-main);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   overflow-x: hidden;
   min-height: 100vh;
 }
@@ -491,16 +496,18 @@ input, textarea, select { font-size: 16px !important; }
   width: 100%; height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.316);
+  border: 2px solid rgba(29, 212, 13, 0.316);
   background: var(--base-700);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.avatar-circle svg {
-  width: 7rem; height: 7rem;
-  color: rgba(57,255,20,0.4);
-  fill: currentColor;
+/*--------------------------------------------------------- JUN14*/
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Keeps it perfectly round */
 }
 @media (min-width: 640px) { .avatar-circle svg { width: 8rem; height: 8rem; } }
 @media (min-width: 768px) { .avatar-circle svg { width: 10rem; height: 10rem; } }
@@ -512,7 +519,7 @@ input, textarea, select { font-size: 16px !important; }
   align-items: center;
   gap: 0.375rem;
   background: var(--base-800);
-  border: 1px solid rgba(57,255,20,0.30);
+  border: 1px solid rgba(55, 255, 20, 0.342);
   padding: 0.25rem 0.625rem;
   border-radius: 9999px;
   font-family: var(--font-mono);
@@ -534,7 +541,7 @@ input, textarea, select { font-size: 16px !important; }
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: #6b728076;
+  color: #6b7280e0;
   font-size: 0.75rem;
 }
 .scroll-line {
