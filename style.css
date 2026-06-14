@@ -351,8 +351,8 @@ input, textarea, select { font-size: 16px !important; }
   gap: 1.5rem;
   padding: 0.5rem 2rem;
   border-radius: 9999px;
-  background: rgba(55, 255, 20, 0.012);
-  border: 1px solid rgba(57,255,20,0.25);
+  background: rgba(55, 255, 20, 0);
+  border: 1px solid rgba(255, 67, 20, 0);
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--accent);
