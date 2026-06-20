@@ -1,6 +1,5 @@
-//There's no easter egg here...
 /* ─────────────────────────────────────────────────────────────
-   PORTFOLIO CONFIGURATION & INTERACTION LOGIC
+   PORTFOLIO CONFIGURATION & INTERACTION LOGIC - JUN 20
    ───────────────────────────────────────────────────────────── */
 
 const CONFIG = {
@@ -17,16 +16,14 @@ const CONFIG = {
 
   /* ── Typewriter roles ── */
   roles: [
-    'Student 🎓',
-    'Web Developer 🌐',
-    'Creative designer 💡',
+
   ],
 
   /* ── About section ── */
   aboutPara1: `Hey there! I'm a <strong style="color:#fff">AI / DS student</strong> with a passion for
     creating beautiful, functional web experiences. I've been coding for
     <strong style="color:#39FF14">2 years</strong> and love working on projects that solve real problems.`,
-  aboutPara2: `When I'm not studying, you'll find me,
+  aboutPara2: `When I'm free, you'll find me,
     building side projects, or exploring the latest in tech. I'm always looking for
     new opportunities to learn and grow.`,
 
@@ -102,7 +99,7 @@ const CONFIG = {
       title   : 'Frontend',
       iconPath: 'M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z',
       skills  : [
-        { name: 'HTML / CSS',   level: 83 },
+        { name: 'HTML / CSS',   level: 87 },
         { name: 'JavaScript',   level: 74 },
         { name: 'React',        level: 42 },
         { name: 'Tailwind CSS', level: 37 },
@@ -113,9 +110,9 @@ const CONFIG = {
       iconPath: 'M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z',
       skills  : [
         { name: 'Python',       level: 87 },
-        { name: 'Node.js',      level: 61 },
+        { name: 'Node.js',      level: 25 },
         { name: 'SQL / MySQL',  level: 29 },
-        { name: 'Flask/Django', level: 35 },
+        { name: 'Flask/Django', level: 22 },
       ],
     },
     {
