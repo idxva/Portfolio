@@ -2,8 +2,8 @@
    DESIGN TOKENS
 ═══════════════════════════════════════════════════════════ */
 :root {
-  --accent:       #41e90e; /* muted cyan/blue */
-  --accent-dim:   #0c92d2;
+  --accent:       #41e90e; 
+  --accent-dim:   #90e690;
   --accent-dark:  #0aff0a;
   --primary-bg:   #111111;
   --secondary-bg: #1a1a1a;
