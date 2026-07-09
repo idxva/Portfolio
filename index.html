@@ -1,0 +1,299 @@
+<!-- V4.07.Y26-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Deva | Portfolio</title>
+  <meta name="description" content="Portfolio of Deva — a passionate student developer." />
+  <!-- ================================================================================JUN 20-->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>if (typeof emailjs !== 'undefined') emailjs.init("-MzuCJ8JrQluN_dDe");</script>
+</head>
+
+<body class="grid-bg">
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="#home" id="nav-logo">&lt;Dev(a)&gt;</a>
+
+    <!-- Desktop links -->
+    <ul class="nav-links">
+      <li><a href="#home"         class="nav-link">Home</a></li>
+      <li><a href="#about"        class="nav-link">About</a></li>
+      <li><a href="#experience"   class="nav-link">Experience</a></li>
+      <li><a href="#projects"     class="nav-link">Projects</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#contact"      class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Desktop CTA -->
+    <a href="#contact" class="hire-btn">Hire Me ↗</a>
+
+    <!-- Hamburger (mobile) -->
+    <button id="hamburger" type="button" aria-label="Toggle menu">
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+      <span class="ham-line"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu">
+    <ul class="mobile-nav-list">
+      <li><a href="#home"         class="mobile-link"><span class="num">01.</span> Home</a></li>
+      <li><a href="#about"        class="mobile-link"><span class="num">02.</span> About</a></li>
+      <li><a href="#experience"   class="mobile-link"><span class="num">03.</span> Experience</a></li>
+      <li><a href="#projects"     class="mobile-link"><span class="num">04.</span> Projects</a></li>
+      <li><a href="#certificates" class="mobile-link"><span class="num">05.</span> Certificates</a></li>
+      <li><a href="#contact"      class="mobile-link"><span class="num">06.</span> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HEROfghg
+═══════════════════════════════════════════════════════════════ -->
+<section id="home">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+
+  <div class="hero-inner">
+    <div class="hero-grid">
+
+      <!-- Text -->
+      <div class="hero-text">
+        <!-- Status badge -->
+        <div class="hero-badge">
+</span>
+        </div>
+        <!-- Greeting -->
+        <div id="hero-greeting" class="hero-greeting"></div>
+        <!-- Name -->
+        <h1 class="hero-name-block">
+          Hi, I'm <br>
+          <span id="hero-name" class="neon-text"></span>
+        </h1>
+
+        <!-- Bio -->
+        <p id="hero-bio"></p>
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a id="cv-link" href="Deva.pdf.pdf" download class="btn-outline">Download CV ↓</a>
+        </div>
+        <!-- Social icons -->
+        <div id="social-links"></div>
+      </div>
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------------------------------------------ -->
+     
+<!-- Avatar -->
+      <div class="hero-avatar-col">
+
+        <div class="avatar-wrap">
+          <div class="avatar-circle">
+              <img src="ideva.png" alt="if you can read this something fuc#d up">
+          </div>
+          <div class="avatar-badge">
+            <span class="pulse-dot"></span>
+            ALIVE
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     ABOUT
+═══════════════════════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="reveal">
+    <p class="section-label">// 01. about_me</p>
+    <h2 class="section-title">About <span class="neon-text">Me</span></h2>
+  </div>
+
+  <div class="about-grid">
+
+    <!-- Terminal card -->
+    <div class="reveal terminal-card">
+      <div class="terminal-header">
+        <div class="term-dot term-dot-red"></div>
+        <div class="term-dot term-dot-yellow"></div>
+        <div class="term-dot term-dot-green"></div>
+        <span class="terminal-filename">about.json</span>
+      </div>
+      <pre class="terminal-pre" id="about-terminal"></pre>
+    </div>
+
+    <!-- About text + stats -->
+    <div class="reveal about-text">
+      <p id="about-para1"></p>
+      <p id="about-para2"></p>
+
+      <!-- Stats -->
+      <div id="about-stats"></div>
+
+      <!-- Education -->
+      <div class="edu-card">
+        <p class="edu-label">// education</p>
+        <div class="edu-body">
+          <div class="edu-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+          </div>
+          <div>
+            <p id="edu-degree"></p>
+            <p id="edu-school"></p>
+            <p id="edu-grade"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     EXPERIENCE
+═══════════════════════════════════════════════════════════════ -->
+<section id="experience" class="section">
+  <div class="reveal">
+    <p class="section-label">// 02. experience</p>
+    <h2 class="section-title">Work &amp; <span class="neon-text">Experience</span></h2>
+  </div>
+  <div class="timeline-container" id="experience-timeline">
+    <!-- Rendered by JS -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════════════════════════ -->
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PROJECTS
+═══════════════════════════════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="reveal">
+    <p class="section-label">// 03. projects</p>
+    <h2 class="section-title">Featured <span class="neon-text">Projects</span></h2>
+    <p class="projects-intro">
+      A few things I've built. Each project is an adventure in problem-solving and design.
+    </p>
+  </div>
+
+  <!-- Filter buttons (rendered by JS) -->
+  <div id="filter-btns" class="reveal"></div>
+
+  <!-- Projects grid (rendered by JS) -->
+  <div id="projects-grid"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CERTIFICATES
+═══════════════════════════════════════════════════════════════ -->
+<section id="certificates" class="section">
+  <div class="reveal">
+    <p class="section-label">// 04. certificates</p>
+    <h2 class="section-title">Acheivements &amp; <span class="neon-text">Certificates</span></h2>
+  </div>
+  <div id="certificates-grid">
+    <!-- Rendered by JS -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section section-narrow">
+  <div class="reveal contact-header">
+    <p class="section-label">// 05. contact</p>
+    <h2 class="section-title" style="margin-bottom:0;">Get In <span class="neon-text">Touch</span></h2>
+    <p>
+      Have a project in mind, want to collaborate, or just say hi? My inbox is always open!
+    </p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Contact info (rendered by JS) -->
+    <div id="contact-info" class="reveal">
+      <!-- Availability badge -->
+      <div id="contact-availability" class="availability-badge">
+        <p>CURRENT STATUS</p>
+        <div class="availability-inner">
+          <span class="pulse-dot"></span>
+          <span id="availability-text">Open to internships &amp; freelance</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <form id="contact-form" class="reveal" novalidate>
+      <div>
+        <label for="f-name" class="form-label">Your Name</label>
+        <input id="f-name" name="from_name" type="text" placeholder="Meoww" class="form-input" required />
+      </div>
+      <div>
+        <label for="f-email" class="form-label">Email Address</label>
+        <input id="f-email" name="reply_to" type="email" placeholder="Meoww@email.com" class="form-input" required />
+      </div>
+      <div>
+        <label for="f-subject" class="form-label">Subject</label>
+        <input id="f-subject" name="subject" type="text" placeholder="Project collaboration" class="form-input" />
+      </div>
+      <div>
+        <label for="f-message" class="form-label">Message</label>
+        <textarea id="f-message" name="message" rows="4" placeholder="Tell me about your project..." class="form-input" required></textarea>
+      </div>
+      <button type="submit" id="send-btn" class="btn-submit">Send Message →</button>
+      <p id="form-success">✓ Message sent successfully!</p>
+    </form>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+<footer>
+  <a href="#home" id="footer-logo">&lt;^gfghfh&gt;</a>
+  <p class="footer-built">
+    Designed &amp; Built with 🤍 and <span class="accent"> Curiousity</span>
+  </p>
+  <p class="footer-copy">© <span id="year"></span> <span id="footer-name"></span> all rights reserved.</p>
+</footer>
+
+
+
+<!-- JavaScript logic is in script.js77777777777777 -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

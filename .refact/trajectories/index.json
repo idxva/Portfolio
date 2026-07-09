@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-06-30T14:08:35.547234300+00:00",
+  "entries": [
+    {
+      "id": "22f8f555-c8fe-4711-99c7-08fde5c93784",
+      "file_name": "22f8f555-c8fe-4711-99c7-08fde5c93784.json",
+      "source": {
+        "kind": "normal"
+      },
+      "created_at": "2026-04-15T04:03:19.118141400+00:00",
+      "updated_at": "2026-04-15T04:03:21.159767400+00:00",
+      "title": "Start project setup for this repository.",
+      "model": "",
+      "mode": "setup",
+      "message_count": 2,
+      "root_chat_id": "22f8f555-c8fe-4711-99c7-08fde5c93784",
+      "is_title_generated": true,
+      "total_lines_added": 0,
+      "total_lines_removed": 0,
+      "tasks_total": 0,
+      "tasks_done": 0,
+      "tasks_failed": 0,
+      "total_prompt_tokens": 0,
+      "total_completion_tokens": 0,
+      "total_tokens": 0,
+      "total_cache_read_tokens": 0,
+      "total_cache_creation_tokens": 0,
+      "displayable_chat": true,
+      "waiting_for_card_ids": [],
+      "file_len": 3728,
+      "file_modified_unix_ms": 1776225801160
+    }
+  ]
+}
