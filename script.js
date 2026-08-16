@@ -1,11 +1,12 @@
-﻿/* ─────────────────────────────────────────────────────────────
+/* ─────────────────────────────────────────────────────────────
    PORTFOLIO CONFIGURATION & INTERACTION LOGIC - JUL 04
    ───────────────────────────────────────────────────────────── */
 
    /* ═══════════════════════════════════════════════════════════════════════
  Dear developer, if you're reading this — congrats on making it this far! The hard work is done, and the rest is just tweaking values to make it your own.
- Do NOT touch the HTML above — just edit the values below.
+ Do NOT touch the HTML just edit the the below
  gud luck and have fun customizing your portfolio! 😛🥂
+ dont forgot to star my repo .
 ═══════════════════════════════════════════════════════════════════════ */
 
 const CONFIG = {
@@ -160,10 +161,20 @@ const CONFIG = {
       iconPath   :'M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z',
     },
     {
+      title      : 'Serve2love',
+      description: '⚠️ changes are being made to the project, it will be updated soon',
+      cat       : 'ml',
+      tags       : [''],
+      github     : null,
+      demo       : null,
+      iconPath: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z',
+
+    },
+    {
       title      : 'Yet to be named',
       description: '⚠️  IN DEVELOPMENT',
       cat       : 'ml',
-      tags       : ['AARGHHHH 🤯'],
+      tags       : ['🥀'],
       github     : null,
       demo       : null,
       iconPath: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z',
@@ -179,7 +190,7 @@ const CONFIG = {
       company: 'DVein Innovations Pvt Ltd.',
       period: 'Jun 2026 – Present',
       description: 'Assisted in research on supervised machine learning algorithms, data preprocessing, and model evaluation techniques.',
-      tags: [ 'Machine Learning', 'Deep Learning', 'Python','Artificial Intelligence']
+      tags: [ 'Machine Learning |', ' Deep Learning |','Python | ',' Artificial Intelligence']
     }
   ],
 
