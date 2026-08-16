@@ -32,38 +32,14 @@
     <!-- Logo -->
     <a href="#home" id="nav-logo">&lt;Dev(a)&gt;</a>
 
-    <!-- Desktop links -->
-    <ul class="nav-links">
-      <li><a href="#home"         class="nav-link">Home</a></li>
-      <li><a href="#about"        class="nav-link">About</a></li>
-      <li><a href="#experience"   class="nav-link">Experience</a></li>
-      <li><a href="#projects"     class="nav-link">Projects</a></li>
-      <li><a href="#certificates" class="nav-link">Certificates</a></li>
-      <li><a href="#contact"      class="nav-link">Contact</a></li>
-    </ul>
+
 
     <!-- Desktop CTA -->
-    <a href="#contact" class="hire-btn">Hire Me ↗</a>
-
-    <!-- Hamburger (mobile) -->
-    <button id="hamburger" type="button" aria-label="Toggle menu">
-      <span class="ham-line"></span>
-      <span class="ham-line"></span>
-      <span class="ham-line"></span>
-    </button>
+    <a href="#contact" class="hire-btn">Hire Me ↗</a>    
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu">
-    <ul class="mobile-nav-list">
-      <li><a href="#home"         class="mobile-link"><span class="num">01.</span> Home</a></li>
-      <li><a href="#about"        class="mobile-link"><span class="num">02.</span> About</a></li>
-      <li><a href="#experience"   class="mobile-link"><span class="num">03.</span> Experience</a></li>
-      <li><a href="#projects"     class="mobile-link"><span class="num">04.</span> Projects</a></li>
-      <li><a href="#certificates" class="mobile-link"><span class="num">05.</span> Certificates</a></li>
-      <li><a href="#contact"      class="mobile-link"><span class="num">06.</span> Contact</a></li>
-    </ul>
-  </div>
+
 </nav>
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -81,7 +57,6 @@
       <div class="hero-text">
         <!-- Status badge -->
         <div class="hero-badge">
-</span>
         </div>
         <!-- Greeting -->
         <div id="hero-greeting" class="hero-greeting"></div>
@@ -114,10 +89,7 @@
           <div class="avatar-circle">
               <img src="ideva.png" alt="if you can read this something fuc#d up">
           </div>
-          <div class="avatar-badge">
-            <span class="pulse-dot"></span>
-            ALIVE
-          </div>
+            
         </div>
       </div>
 
@@ -223,8 +195,15 @@
     <p class="section-label">// 04. certificates</p>
     <h2 class="section-title">Acheivements &amp; <span class="neon-text">Certificates</span></h2>
   </div>
-  <div id="certificates-grid">
-    <!-- Rendered by JS -->
+  <div class="certificates-wrapper">
+    <div id="certificates-grid" class="certificates-blurred">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="update-soon-overlay">
+      <div class="update-soon-badge">
+        <span>-- Would be available soon! --</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -245,13 +224,6 @@
     <!-- Contact info (rendered by JS) -->
     <div id="contact-info" class="reveal">
       <!-- Availability badge -->
-      <div id="contact-availability" class="availability-badge">
-        <p>CURRENT STATUS</p>
-        <div class="availability-inner">
-          <span class="pulse-dot"></span>
-          <span id="availability-text">Open to internships &amp; freelance</span>
-        </div>
-      </div>
     </div>
 
     <!-- Contact form -->
