@@ -1,1 +1,1 @@
-A personal portfolio for developers and designers, built with Next.js and styled with TailwindCSS. It features a clean UI, responsive layout, and sections to showcase projects, experience, and creative skills.
+**portfolio
