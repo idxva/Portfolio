@@ -188,7 +188,7 @@ const CONFIG = {
     {
       role: 'AI & ML Intern',
       company: 'DVein Innovations Pvt Ltd.',
-      period: 'Jun 2026 – Present',
+      period: 'Jun – Aug 2026',
       description: 'Assisted in research on supervised machine learning algorithms, data preprocessing, and model evaluation techniques.',
       tags: [ 'Machine Learning |', ' Deep Learning |','Python | ',' Artificial Intelligence']
     }
