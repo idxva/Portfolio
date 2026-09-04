@@ -17,7 +17,7 @@ const CONFIG = {
   logo      : '&lt;Dev(a)&gt;',
   footerLogo: '^',
   greeting  : '🐦‍🔥 Valar morghullis',
-  bio       : 'A passionate student developer crafting creative digital experiences.',
+  bio       : 'A passionate student developer',
   cvLink    : 'Deva.pdf.pdf',
   status    : 'open to internships & freelance',
 
