@@ -268,7 +268,7 @@ input, textarea, select { font-size: 16px !important; }
 /* Logo */
 #nav-logo {
   font-family: var(--font-sans);
-  font-size: 1.55rem;
+  font-size: 1.15rem;
   font-weight: 990;
   background: var(--grad-accent);
   -webkit-background-clip: text;
@@ -999,8 +999,9 @@ footer {
   border-top: 1px solid var(--border-subtle);
   padding: 3rem 1.5rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(12px);
+  background: rgba(13, 10, 30, 0.089);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(0.5px) saturate(180%);
 }
 #footer-logo {
   font-family: var(--font-mono);
