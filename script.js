@@ -45,7 +45,7 @@ const CONFIG = {
   education: {
     degree : 'B.Sc Artificial Intelligence',
     school : 'HCAS • 2024 – 2027',
-    grade  : 'University of Madras | ',
+    grade  : 'University of Madras  ',
   },
 
   /* ── About-terminal JSON card ── */
