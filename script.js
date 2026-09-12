@@ -6,7 +6,7 @@
  Dear developer, if you're reading this — congrats on making it this far! The hard work is done, and the rest is just tweaking values to make it your own.
  Do NOT touch the HTML just edit the the below
  gud luck and have fun customizing your portfolio! 😛🥂
- dont forgot to star my repo .
+ dont forgot to star my repo ....
 ═══════════════════════════════════════════════════════════════════════ */
 
 const CONFIG = {
