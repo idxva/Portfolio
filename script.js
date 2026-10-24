@@ -274,14 +274,14 @@ document.addEventListener('DOMContentLoaded', () => {
   if (aboutTerminalEl) {
     const td = CONFIG.terminalData;
     const jsonLines = Object.entries(td).map(([k, v]) => {
-      const key = `  <span style="color:#93c5fd">"${k}"</span>`;
+      const key = `  <span style="color:#073161">"${k}"</span>`;
       let val;
       if (Array.isArray(v)) {
-        val  = `[\n${v.map(i => `    <span style="color:#fde68a">"${i}"</span>`).join(',\n')}\n  ]`;
+        val  = `[\n${v.map(i => `    <span style="color:#000000">"${i}"</span>`).join(',\n')}\n  ]`;
       } else if (typeof v === 'boolean') {
         val = `<span style="color:#39FF14">${v}</span>`;
       } else {
-        val = `<span style="color:#fde68a">"${v}"</span>`;
+        val = `<span style="color:#000000">"${v}"</span>`;
       }
       return `${key}: ${val}`;
     });
