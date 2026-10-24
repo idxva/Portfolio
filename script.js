@@ -27,9 +27,9 @@ const CONFIG = {
   ],
 
   /* ── About section ── */
-  aboutPara1: `Hey there! I'm a <strong style="background: linear-gradient(155deg, #9343df, #a14fee, #cdaeec); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AI & DS student</strong> with a passion for
+  aboutPara1: `Hey there! I'm a <strong style="background: linear-gradient(155deg,#046A38, #275841, #a8cfbc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">AI & DS student</strong> with a passion for
     creating beautiful, functional web experiences. I've been coding for
-    <strong style="background: linear-gradient(155deg, #9343df, #a14fee, #cdaeec); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">two years</strong> and love working on projects that solve real problems.`,
+    <strong style="background: linear-gradient(156deg, #046A38, #275841, #48ca8b); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">two years</strong> and love working on projects that solve real problems.`,
   aboutPara2: `When I'm free, you'll find me,
     building side projects, or exploring the latest in tech. I'm always looking for
     new opportunities to learn and grow.`,
