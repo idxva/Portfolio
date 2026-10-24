@@ -797,7 +797,7 @@ input, textarea, select { font-size: 16px !important; }
   max-width: 100%;
   color: var(--text-primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 0.9rem;
   transition: var(--transition);
   margin-top: 0.2rem;
